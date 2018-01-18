@@ -9,7 +9,7 @@
     struct list* next;
  } list;
 
- void InsertNth(list *head, int *n){
+ void InsertNth(list *head){
     int s;
     printf("Se citeste index-ul la care se pune valoare : ");
     scanf("%d", &s);
@@ -57,7 +57,7 @@
     tail = temp;
     }
 
-    InsertNth(head, n);
+    InsertNth(head);
     temp = head;
 
     printf("\n");
